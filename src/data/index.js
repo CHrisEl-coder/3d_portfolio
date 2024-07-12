@@ -1,15 +1,22 @@
-import {bulls, smart, seed, tesla} from '../assets/images/index'
 import {
-    car,
+    bulls, 
+    smart, 
+    seed, 
+    diurnal, 
+    seedFlyer, 
+    creative, 
+    precious, 
+    chrisFlyer 
+} from '../assets/images/index'
+import {
+    lockscreen,
     contact,
     css,
-    estate,
     express,
     git,
     github,
     html,
     javascript,
-    linkedin,
     mongodb,
     motion,
     mui,
@@ -19,11 +26,17 @@ import {
     react,
     redux,
     sass,
-    snapgram,
-    summiz,
+    briefcase,
     tailwindcss,
-    threads,
-    typescript
+    cafe,
+    wallet,
+    typescript,
+    firebase,
+    music,
+    movie,
+    camera,
+    defi,
+    twitter
 } from "../assets/icons";
 
 export const skills = [
@@ -57,6 +70,8 @@ export const skills = [
         type: "Frontend",
         key: 5
     },
+
+
     {
         imageUrl: javascript,
         name: "JavaScript",
@@ -123,12 +138,19 @@ export const skills = [
         name: "TypeScript",
         type: "Frontend",
         key: 16
+    },
+
+    {
+        imageUrl: firebase,
+        name: 'Firebase',
+        type: ' BaaS',
+        key: 17
     }
 ];
 
 export const experiences = [
     {
-        title: " Graphic Designer",
+        title: " Graphic Designer and Ads-Manager",
         company_name: "Seedrock",
         icon: seed,
         iconBg: "#cdffcd",
@@ -141,24 +163,24 @@ export const experiences = [
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        title: "Site-Manager and Content Writer",
+        company_name: "Diurnal Report",
+        icon: diurnal,
+        iconBg: "#000000",
+        date: "April 2023 - August 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Managing the wordpress design and making sure the plugins are up-to-date.",
+            "Writing Seo friendly contents to further boost the site visibility.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Handling the site twitter account to boost visibility.",
         ],
     },
     {
-        title: "Full-Stack Developer / Branding",
+        title: "Full-Stack Developer",
         company_name: "Bulls Investment",
         icon: bulls,
         iconBg: "#00008B",
-        date: "April 2023 - August 2023",
+        date: "September 2023 - Dec 2023",
         points: [
             "Picking Out the site color and fonts from scratch.",
             "Creating Logo for the company the improve its generral public look, and content for to further educate users about the site.",
@@ -171,7 +193,7 @@ export const experiences = [
         company_name: "SmartFunds",
         icon: smart,
         iconBg: "#013220",
-        date: " September 2023 - March 2024",
+        date: " Dec 2023 - April 2024",
         points: [
             "Picking Out the site color and fonts from scratch.",
             "Creating Logo for the company the improve its generral public look, and content for to further educate users about the site.",
@@ -190,56 +212,125 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/CHrisEl-coder',
     },
     {
-        name: 'LinkedIn',
-        iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        name: 'Twitter',
+        iconUrl: twitter,
+        link: 'https://x.com/t_contents',
     }
 ];
 
-export const projects = [
+export const projects = [ 
     {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
-    {
-        iconUrl: estate,
+        iconUrl: bulls,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'Bulls Investment',
+        description: 'Created a website for a new investment site, that allow users to register and invest through mapped out plans.',
+        link: 'https://bullsinvestment.vercel.app',
     },
     {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        iconUrl: wallet,
+        theme: 'btn-back-green',
+        name: 'SmartFunds',
+        description: 'Created a crypto investment app where people can signin and choose an investment plan to invest in different crypto project.',
+        link: 'smartfund.site',
+    },
+    {
+
+
+        iconUrl: briefcase,
+        theme: 'btn-back-red',
+        name: 'TodoApp',
+        description: 'Developed a simple todo app, to store things you want to do and outputs the time the task was created and also a functionality to delete the app when done',
+        link: 'https://github.com/CHrisEl-coder/TodoApp.git',
+    },
+    
+    {
+        iconUrl: cafe,
+        theme: 'btn-back-blue',
+        name: 'Cafe Landing Page',
+        description: 'Designed a Simple Cafe landing page that shows the menu and prices ',
+        link: 'https://github.com/CHrisEl-coder/cafe.git',
+    },
+    {
+        iconUrl: lockscreen,
+        theme: 'btn-back-pink',
+        name: 'Screen Lock',
+        description: 'Simple Lock Screen Design That Tells Real Time Date.',
+        link: 'https://github.com/CHrisEl-coder/LocKScreen.git',
     }
-];
+   ]
+
+export const graphics = [
+    {
+        name: 'Seedrock Flyer',
+        type: 'Graphics',
+        imageUrl: seedFlyer,
+        description: ' Call to action design, educating the audience on what the medicine is all about and how they can purchase the medicine.'
+    },
+
+    {
+        name: 'Chris Creative Flyer',
+        type: 'Graphics',
+        imageUrl: creative,
+        description: 'Chris Creative main digital flyer for ads and online visibility.'
+    },
+
+
+    {
+        name: 'Precious Heritage Flyer',
+        type: 'Graphics',
+        imageUrl: precious,
+        description: ' A well thought out flyer to show what the business is all about, so as to get more visbility online and offline.  '
+    },
+
+    {
+        name: 'Promotional Flyer',
+        type: 'Graphics',
+        imageUrl: chrisFlyer,
+        description: 'Promotional flyer made for Chris Creative for ads.'
+    }
+]
+
+export const writeUp = [
+    {
+        title: `Rema's Latest New Hit Single`,
+        type: 'Content',
+        icon: music,
+        description: 'Afrobeat Singer, Rema have become one of the pioneer of the new movement. Currently signed to Mavins Record. He has proved his worth in the industry. Rema made his debut with Dumebi, a song which grew... ',
+        link: 'https://docs.google.com/document/d/1_rxt5-zeqpJMJ41pG4EnuHlbNeBkeu1Q/edit?usp=drive_link&ouid=104396756049297691502&rtpof=true&sd=true',
+        
+        key: 'calmDown'
+    },
+
+    {
+        title: `RISE: A King From Across The Sea`,
+        type: 'Content',
+        icon: movie,
+        description: 'The African documentary thriller titled RISE directed by the African film director Akin Omotoso which was release in 24 june 2022 has been trending across lots of platforms and website ... ',
+        link: 'https://docs.google.com/document/d/1aJ745bPVLEKtMN4l0TkLmuwoNga7WlpG/edit?usp=drive_link&ouid=104396756049297691502&rtpof=true&sd=true',
+        key: 'rise'
+    },
+
+
+    {
+        title: `Intro To Defi`,
+        type: 'Content',
+        icon: defi,
+        description: 'Cefi  known as centralized finance is a our current financial system that is centralized and managed by a given authority  that is prone to corruption, fraud and mismanagement ... ',
+        link: 'https://docs.google.com/document/d/1aEStd6dAmeoTdAWXBjwQAKbQjN8iKu-F/edit?usp=drive_link&ouid=104396756049297691502&rtpof=true&sd=true',
+        key: 'defi'
+    },
+
+
+    {
+        title: `The 02 Arena`,
+        type: 'Content',
+        icon: camera,
+        description: `The 02 Arena, London remains one of the top destinations of Africa singer to sell out. Musicians across
+        the globe have dreamed of performing in the 02 Arena and also selling  ... `,
+        link: 'https://docs.google.com/document/d/1a5Re-nAT7rjjt_6y6y4YCio28EqR9sBP/edit?usp=sharing&ouid=104396756049297691502&rtpof=true&sd=true',
+        key: '02'
+    },
+]

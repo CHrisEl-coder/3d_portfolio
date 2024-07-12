@@ -2,7 +2,11 @@
 import smart from './smart.png'
 import bulls from './bulls.png'
 import seed from './seed.png'
-import tesla from './tesla.png'
+import diurnal from './diurnal.jpg'
+import seedFlyer from './seed.jpg'
+import creative from './creative.png'
+import precious from './precious.png'
+import chrisFlyer from './chris.png'
 
 
 export {
@@ -10,5 +14,9 @@ export {
     bulls,
     smart,
     seed,
-    tesla
+    diurnal,
+    chrisFlyer,
+    creative,
+    precious,
+    seedFlyer
     }

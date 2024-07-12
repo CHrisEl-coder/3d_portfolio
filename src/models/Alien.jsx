@@ -7,7 +7,6 @@ const Alien = ({ currentAnimation, ...props}) => {
   const alienRef = useRef()
   const { nodes, materials, animations } = useGLTF(scene)
   const { actions } = useAnimations(animations, alienRef)
-  console.log(actions)
 
   useEffect(() => {
     Object.values(actions).forEach((action) => action.stop());

@@ -16,13 +16,17 @@ const NavBar = () => {
 
            <nav className=' py-1'>
            <ul className='flex gap-7'>
-             <li className={location.pathname === '/' ? 'w-20 h-8 py-1 text-center rounded-lg shadow-inner shadow-rose-100 duration-500 hover:-translate-y-1' 
+             <li className={location.pathname === '/' ? 'w-20 h-8 py-1 text-center rounded-lg duration-500 hover:-translate-y-1' 
              : 'w-20 h-8 py-1 text-center rounded-lg shadow-md duration-500 hover:-translate-y-1'}>
                 <NavLink to={'/'} className= {({ isActive }) => isActive ?' transition-all duration-500 transform active:-translate-y-2.5 font-semibold font-mono text-amber-500' : 'font-semibold text-red-800 font-mono tracking-wide'}>Home</NavLink>
              </li>
-             <li className={location.pathname === '/' ? 'w-20 h-8 py-1 text-center rounded-lg shadow-inner shadow-rose-100 duration-500 hover:-translate-y-1' 
+             <li className={location.pathname === '/' ? 'w-20 h-8 py-1 text-center rounded-lg duration-500 hover:-translate-y-1' 
              : 'w-20 h-8 py-1 text-center rounded-lg shadow-md duration-500 hover:-translate-y-1'}>
                 <NavLink to={'/about'} className= {({ isActive }) => isActive ?' transition-all duration-500 translate-y-1 font-semibold font-mono text-amber-500' : 'font-semibold text-red-800 font-mono tracking-wide'}>About</NavLink>
+             </li>
+             <li className={location.pathname === '/' ? 'w-20 h-8 py-1 text-center rounded-lg duration-500 hover:-translate-y-1' 
+               : 'w-20 h-8 py-1 text-center rounded-lg shadow-md duration-500 hover:-translate-y-1'}>
+                  <NavLink to={'/projects'} className= {({ isActive }) => isActive ?' transition-all duration-500 translate-y-1 font-semibold font-mono text-amber-500' : 'font-semibold text-red-800 font-mono tracking-wide'}>Projects</NavLink>
              </li>
 
              

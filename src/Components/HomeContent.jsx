@@ -8,6 +8,7 @@ import web from '../assets/images/web.png'
 import lead from '../assets/images/lead.png'
 import chat from '../assets/icons/chat.png'
 import about from '../assets/icons/about.png'
+import Socials from './Socials'
 
 
 
@@ -35,12 +36,14 @@ const HomeContent = ({currentStage}) => {
         <div className=' font-mono py-4 px-8 rounded-md bg-slate-200 text-red-950 flex opacity-90'>
         
             <p   className=' sm:text-lg sm:leading-snug text-sm my-8 mx-5 max-w-sm'>
-                Hi, I,m <span className=' font-bold font-poppins'> Christian </span>  <br/>
+                Hi, I'm <span className=' font-bold font-poppins'> Christian </span>  <br/>
                 A <span className=' font-semibold'> Website Developer,</span> <span className=' font-semibold'> Graphics Designer,</span> & <span className=' font-semibold'> Content Writer.</span>
                 
             </p>
 
             <img src={glasses} className=' h-28' />
+
+            <Socials />
         </div>
     ),
     2: (

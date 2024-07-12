@@ -13,7 +13,7 @@ const Space = ({ isRotating, setIsRotating, setCurrentStage, ...props}) =>  {
 
   const lastX = useRef(0)
 
-  const rotationSpeed = useRef(0)
+  let rotationSpeed = useRef(0)
 
   const dampingFactor = 0.95;
 
@@ -71,21 +71,60 @@ const Space = ({ isRotating, setIsRotating, setCurrentStage, ...props}) =>  {
     }
   }
 
+
+  const handleTouchEnd = (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      setIsRotating(false)
+  }
+
+  const handleTouchStart = () => {
+
+    e.stopPropagation();
+    e.preventDefault();
+    setIsRotating(true);
+
+  }
+
+  const handleTouchMove = () => {
+
+    e.stopPropagation();
+    e.preventDefault()
+
+    if (isRotating) {
+      const clientX = e.touches ? e.clientX[0].clientX : e.clientX
+      const delta = (clientX - lastX.current) / viewport.width;
+      
+      spaceBoyRef.current.rotation.y += delta * 0.01 * Math.PI;
+      lastX.current = clientX;
+      rotationSpeed.current = delta * 0.01 * Math.PI
+    }
+
+  }
+
   useEffect(() => {
     const canvas = gl.domElement
     canvas.addEventListener('pointerdown', handleMousePress);
     canvas.addEventListener('pointerup',  handleMouseRelease);
     canvas.addEventListener('pointermove', handleMouseMove)
-    document.addEventListener('keydown', handleKeyboardPress)
-    document.addEventListener('keyup', handleKeyboardKeyUp)
+    window.addEventListener('keydown', handleKeyboardPress)
+    window.addEventListener('keyup', handleKeyboardKeyUp)
+    canvas.addEventListener('touchstart', handleTouchStart);
+    canvas.addEventListener('touchend', handleTouchEnd);
+    canvas.addEventListener('touchmove', handleTouchMove);
+
+
 
     return () => {
 
       canvas.removeEventListener('pointerdown', handleMousePress);
       canvas.removeEventListener('pointerdown',  handleMouseRelease);
       canvas.removeEventListener('pointermove', handleMouseMove)
-      document.removeEventListener('keydown', handleKeyboardPress)
-      document.removeEventListener('keyup', handleKeyboardKeyUp)
+      window.removeEventListener('keydown', handleKeyboardPress)
+      window.removeEventListener('keyup', handleKeyboardKeyUp)
+      canvas.removeEventListener('touchstart', handleTouchStart)
+      canvas.removeEventListener('touchend', handleTouchEnd)
+      canvas.removeEventListener('touchmove', handleTouchMove)
     }
     
   }, [gl, handleMousePress, handleMouseMove, handleMouseRelease])
