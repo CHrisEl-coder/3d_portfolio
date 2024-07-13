@@ -5,8 +5,8 @@ const Socials = () => {
   return (
     <div className="socials">
        {
-        socialLinks.map(social => (
-            <Link to={social.link} target="_blank" rel="noreferrer noopener"><img src={social.iconUrl} /></Link>
+        socialLinks.map((social, index) => (
+            <Link to={social.link} key={index} target="_blank" rel="noreferrer noopener"><img src={social.iconUrl} /></Link>
         ))
        }
     </div>

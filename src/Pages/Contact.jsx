@@ -1,6 +1,5 @@
 import { Suspense, useState } from 'react'
 import { BsSend } from 'react-icons/bs'
-import { CiUser, CiMail } from 'react-icons/ci'
 import emailjs from '@emailjs/browser'
 import { Canvas } from '@react-three/fiber'
 import Alien from '../models/Alien'

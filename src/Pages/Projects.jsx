@@ -13,8 +13,8 @@ const Projects = () => {
            {`Over the years i have learnt, relearnt and squashed alot of bugs, During my journey i have built alot of projects, written a lot of contents and made a lot of designs. most of them are open sourced. If you see stuff that piques your interest feel free to explore the codebase and contribute your ideas, your contribution is highly valued!`}
         </p>
       </div>
-      <div className=' flex flex-wrap my-20 gap-16'>
-        {projects.map((project, index) => (
+      <div className=' flex flex-wrap my-20 gap-16' key='pr'>
+        {projects.map((project) => (
           <div className=' lg:w-[400px] w-full ' key={project.name}>
              <div className=' block-container w-12 h-12'>
 
@@ -55,13 +55,13 @@ const Projects = () => {
         
       </div>
          {
-         socialLinks.map((link) => ( 
-            link.name === 'GitHub' ? <Link to={link.link} className=' btn-bg-black w-28 flex gap-2 rounded-md text-white p-3 mb-2 font-bold text-md'><img src={link.iconUrl} className='w-6'/>{link.name}</Link> : ''
+         socialLinks.map((link, index) => ( 
+            link.name === 'GitHub' ? <Link to={link.link} key={index} className=' btn-bg-black w-28 flex gap-2 rounded-md text-white p-3 mb-2 font-bold text-md'><img src={link.iconUrl} className='w-6'/>{link.name}</Link> : ''
          ))
          }
       <hr className=' bg-slate-200' />
 
-      <div className=''>
+      <div className='' key='gr'>
          <div className='graphics-container'>
             {
               graphics.map((graphic, index) => (
@@ -86,7 +86,7 @@ const Projects = () => {
 
 
 
-      <div className=' flex flex-wrap my-20 gap-16'>
+      <div className=' flex flex-wrap my-20 gap-16' key='wr'>
         {writeUp.map((write) => (
           <div className=' lg:w-[400px] w-full ' key={write.key}>
              <div className=' block-container w-12 h-12'>

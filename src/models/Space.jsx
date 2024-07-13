@@ -6,7 +6,7 @@ import { a } from '@react-spring/three'
 
 import spaceBoy from '../assets/3d/space_boi.glb'
 const Space = ({ isRotating, setIsRotating, setCurrentStage, ...props}) =>  {
-  const spaceBoyRef = useRef()
+  const spaceBoyRef = useRef();
   const { nodes, materials } = useGLTF(spaceBoy)
 
   const {gl, viewport} = useThree();
