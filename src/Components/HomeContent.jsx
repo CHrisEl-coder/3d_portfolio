@@ -9,7 +9,7 @@ import lead from '../assets/images/lead.png'
 import chat from '../assets/icons/chat.png'
 import about from '../assets/icons/about.png'
 import Socials from './Socials'
-import Loader from './Loader'
+
 
 
 
@@ -77,7 +77,7 @@ const HomeContent = ({currentStage}) => {
   }
 
  
-  return content[currentStage] || <Loader />
+  return content[currentStage] || null
 }
 
 export default HomeContent
