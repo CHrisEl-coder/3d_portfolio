@@ -42,7 +42,7 @@ const Home = () => {
     <section className='w-full h-screen relative'>
 
         <div className=' absolute left-0 right-0 top-28 flex items-center z-10 text-white justify-center'>
-          {currentStage && <HomeContent currentStage={currentStage} />}
+          {currentStage ? <HomeContent currentStage={currentStage} /> : <Loader />}
         </div>
       
          <Canvas className={`w-full h-screen bg-transparent ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`} camera={{ near: 0.1, far: 1000}}>
