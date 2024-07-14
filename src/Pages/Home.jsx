@@ -62,7 +62,7 @@ const Home = () => {
 
               <Space 
                 position = {spacePosition}
-                scale = {spaceScale}
+                
                 rotation = {spaceRotation}
                 isRotating={isRotating}
                 setIsRotating={setIsRotating}
