@@ -1,11 +1,11 @@
-import { Suspense, useState } from 'react'
+import { Suspense, useState } from 'react';
 import { BsSend } from 'react-icons/bs'
 import emailjs from '@emailjs/browser'
 import { Canvas } from '@react-three/fiber'
 import Alien from '../models/Alien'
-import Loader from '../Components/Loader'
+import { Alert, Loader } from '../Components';
 import useAlert from '../hooks/useAlert'
-import Alert from '../Components/Alert'
+
 
 
 const Contact = () => {
@@ -79,7 +79,7 @@ const Contact = () => {
 
 
   return (
-    <section className='relative flex lg:flex-row flex-col mt-7 max-container'>
+    <section className='relative flex lg:flex-row flex-col mt-7 max-container bg-white'>
     {alert.show && <Alert {...alert} />}
 
       <div className=' flex-1 flex min-w-[50%] flex-col'>
@@ -138,7 +138,7 @@ const Contact = () => {
 
              <button 
                type='submit'
-               className=' bg-gradient-to-r from-[#fd553f] to-[#6b0404f5] py-1 rounded-md text-white font-semibold font-mono text-sm flex justify-center items-center'>
+               className=' bg-gradient-to-r from-[#222121] to-[#858484f5] py-1 rounded-md text-white font-semibold font-mono text-sm flex justify-center items-center'>
               { isLoading ? 'Sending ....' : 'Send a Message' }
               { isLoading ? '' : <BsSend className=' mx-5 h-6 font-bold mt-1' /> }
               

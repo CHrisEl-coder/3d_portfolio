@@ -7,6 +7,7 @@ import seedFlyer from './seed.jpg'
 import creative from './creative.png'
 import precious from './precious.png'
 import chrisFlyer from './chris.png'
+import glasses from './glasses.png'
 
 
 export {
@@ -18,5 +19,6 @@ export {
     chrisFlyer,
     creative,
     precious,
-    seedFlyer
+    seedFlyer,
+    glasses
     }

@@ -1,11 +1,11 @@
-import React from 'react'
-import { projects, graphics, writeUp, socialLinks } from '../data'
-import { Link } from 'react-router-dom'
-import { arrow } from '../assets/icons'
-import Cta from '../Components/Cta'
+import React from 'react';
+import { projects, graphics, writeUp, socialLinks } from '../data';
+import { Link } from 'react-router-dom';
+import { arrow } from '../assets/icons';
+import { Cta } from '../Components';
 const Projects = () => {
   return (
-    <section className=' max-container'>
+    <section className=' max-container bg-white'>
 
        <h1 className=' head-text '> My <span className=' font-semibold drop-shadow red-gradient_text'> Projects </span></h1>
       <div className=' mt-5 flex flex-col gap-3 text-slate-500 '>

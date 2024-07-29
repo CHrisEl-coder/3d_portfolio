@@ -6,12 +6,10 @@ import { Outlet } from 'react-router-dom'
 
 const App = () => {
   return (
-    <>
+    <div className=' home_container'>
      <NavBar />
-     <div className=' w-full'>
-        <Outlet />
-     </div>
-    </>
+     <Outlet />
+    </div>
   )
 }
 

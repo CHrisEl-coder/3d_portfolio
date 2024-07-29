@@ -1,13 +1,13 @@
 import React from 'react'
-import { skills, experiences } from '../data/index.js'
-import Cta from '../Components/Cta.jsx';
+import { Cta } from '../Components';
+import { skills, experiences,  } from '../data';
 import glasses from '../assets/images/glasses.png'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css';
 const About = () => {
 
   return (
-    <section className='max-container'>
+    <section className='max-container bg-white'>
         <div className=' flex'>
            <h1  className=' head-text'>
                 Hi, I'm <span className=' red-gradient_text font-semibold drop-shadow'> Chris </span>

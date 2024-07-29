@@ -223,7 +223,7 @@ export const socialLinks = [
 
 export const projects = [ 
     {
-        iconUrl: bulls,
+        iconUrl: wallet,
         theme: 'btn-back-black',
         name: 'Bulls Investment',
         description: 'Created a website for a new investment site, that allow users to register and invest through mapped out plans.',
