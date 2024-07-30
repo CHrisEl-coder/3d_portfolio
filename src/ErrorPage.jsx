@@ -3,7 +3,7 @@ import React from 'react'
 import { useRouteError, Link } from 'react-router-dom'
 
 const ErrorPage = () => {
-    const error = useRouteError()
+    const error = useRouteError();
   return (
     <section className='w-full h-screen relative'>
       <div className=' absolute top-40 left-0 right-0 flex flex-col justify-center items-center leading-6 gap-12'>

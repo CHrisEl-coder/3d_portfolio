@@ -1,15 +1,14 @@
 import { glasses } from "../assets/images"
 import {Socials} from '../Components'
 import { Link, NavLink } from 'react-router-dom'
-import { Suspense } from "react"
-import { Loader } from "@react-three/drei"
 
 
 const Home = () => {
 
+ 
+
   return (
     <section className="home">
-       <Suspense fallback={<Loader />}>
           <div className="hero">
 
               <article>
@@ -39,7 +38,6 @@ const Home = () => {
           <div className="sc-container">
               <Socials />
           </div>
-       </Suspense>
        
       
       
