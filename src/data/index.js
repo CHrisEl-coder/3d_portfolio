@@ -22,7 +22,6 @@ import {
     mui,
     nextjs,
     nodejs,
-    pricewise,
     react,
     redux,
     sass,
@@ -225,25 +224,25 @@ export const projects = [
     {
         iconUrl: wallet,
         theme: 'btn-back-black',
-        name: 'Bulls Investment',
-        description: 'Created a website for a new investment site, that allow users to register and invest through mapped out plans.',
-        link: 'https://bullsinvestment.vercel.app',
+        name: 'Transact',
+        description: 'A full Banking app with transaction functionalities linked up with Plaid and Dwolla Utilising Appwrite for Auth and Database.',
+        link: 'http://bankapp-gules-two.vercel.app',
     },
     {
-        iconUrl: wallet,
-        theme: 'btn-back-green',
-        name: 'SmartFunds',
-        description: 'Created a crypto investment app where people can signin and choose an investment plan to invest in different crypto project.',
-        link: 'smartfund.site',
-    },
-    {
-
-
         iconUrl: briefcase,
+        theme: 'btn-back-green',
+        name: 'Realtor',
+        description: 'Real Estate web app with listing, editing, and personal user dashboard, utilising firebase auth, firestore and storage for user auth, credential and document storage.',
+        link: 'http://realtor-app-gules.vercel.app',
+    },
+    {
+
+
+        iconUrl: wallet,
         theme: 'btn-back-red',
-        name: 'TodoApp',
-        description: 'Developed a simple todo app, to store things you want to do and outputs the time the task was created and also a functionality to delete the app when done',
-        link: 'https://github.com/CHrisEl-coder/TodoApp.git',
+        name: 'SmartFund',
+        description: ' Crypto investment app, with React and Firebase ',
+        link: 'http://smart-fund-roan.vercel.app',
     },
     
     {

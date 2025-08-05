@@ -6,6 +6,20 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        wave: {
+          '0%' : { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
+          '25%': { borderRadius: '30% 60% 70% 40% / 50% 60% 30% 60%' },
+          '50%': { borderRadius: '70% 30% 60% 40% / 60% 50% 40% 30%' },
+          '75%': { borderRadius: '40% 70% 30% 60% / 70% 40% 60% 50%' },
+          '100%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
+        }
+      },
+
+      animation: {
+        'wave': 'wave 5s ease-in-out infinite'
+      },
+
       colors: {
         gray: {
           200: "#D5DAE1"
