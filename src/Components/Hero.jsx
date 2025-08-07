@@ -6,6 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
 
 import { NavLink } from "react-router-dom";
+import Socials from "./Socials";
 const Hero = () => {
   const [show, setShow] = useState(false);
 
@@ -108,6 +109,7 @@ const Hero = () => {
           <Skill />
         </div>
       </div>
+      <Socials />
     </div>
   );
 };

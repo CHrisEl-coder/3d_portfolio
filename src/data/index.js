@@ -10,7 +10,7 @@ import {
 } from '../assets/images/index'
 import {
     lockscreen,
-    contact,
+    link,
     css,
     express,
     git,
@@ -205,8 +205,8 @@ export const experiences = [
 export const socialLinks = [
     {
         name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
+        iconUrl: link,
+        link: '/www.linkedin.com/in/chrisel',
     },
     {
         name: 'GitHub',

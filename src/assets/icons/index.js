@@ -26,6 +26,7 @@ import threads from './threads.svg'
 import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
+import link from './link.svg'
 import soundoff from './soundoff.png'
 import firebase from './firebase.svg'
 import movie from './movie.svg'
@@ -35,6 +36,7 @@ import defi from './defi.svg'
 
 
 export {
+    link,
     css,
     express,
     git,
